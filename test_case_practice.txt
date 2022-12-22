@@ -1,0 +1,472 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@FIRST COME FIRST SERVE@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#FCFS TEST-CASE1
+5
+0
+4
+1
+3
+2
+1
+3
+2
+4
+5
+
+Pro     Arr     Bur     Ct      Tat     Rt
+1       0       4       4       4       0
+2       1       3       7       6       3
+3       2       1       8       6       5
+4       3       2       10      7       5
+5       4       5       15      11      6
+
+Average response 3.8 and turnaround time is 6.8
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@SHORTEST JOB FIRST@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#SJF TEST-CASE1
+5
+0
+4
+1
+3
+2
+1
+3
+2
+4
+5
+
+
+Pro     Arr     Bur     Ct      Tat     Rt
+1       0       4       4       4       0
+2       1       3       10      9       6
+3       2       1       5       3       2
+4       3       2       7       4       2
+5       4       5       15      11      6
+
+Average response 3.2 and turnaround time is 6.2
+
+
+#SJF TEST-CASE2
+5
+2
+6
+5
+2
+1
+8
+0
+3
+4
+4
+
+Pro     Arr     Bur     Ct      Tat     Rt
+1       2       6       9       7       1
+2       5       2       11      6       4
+3       1       8       23      22      14
+4       0       3       3       3       0
+5       4       4       15      11      7
+
+Average response 5.2 and turnaround time is 9.8
+
+
+#SJF TEST-CASE3
+5
+0
+7
+4
+1
+2
+4
+5
+4
+
+
+Pro     Arr     Bur     Ct      Tat     Rt
+1       0       7       7       7       0
+2       4       1       8       4       3
+3       2       4       12      10      6
+4       5       4       16      11      7
+
+Average response 4 and turnaround time is 8
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#TEST-CASE PRIORITY
+5
+0
+4
+1
+1
+3
+2
+2
+1
+2
+3
+2
+3
+4
+5
+2
+
+Order of execution of processes is 1->2->3->5->4->
+Pro     Arr     Bur     PRI     Ct      Tat     Rt
+1       0       4       1       4       4       0
+2       1       3       2       7       6       3
+3       2       1       2       8       6       5
+4       3       2       3       15      12      10
+5       4       5       2       13      9       4
+
+Average response 4.4 and turnaround time is 7.4
+
+
+
+#TEST-CASE2 PRIORITY NON-PREAMPTIVE
+4
+0
+4
+3
+1
+2
+2
+2
+3
+4
+4
+2
+1
+
+Order of execution of processes is 1->4->2->3->
+Pro     Arr     Bur     PRI     Ct      Tat     Rt
+1       0       4       3       4       4       0
+2       1       2       2       8       7       5
+3       2       3       4       11      9       6
+4       4       2       1       6       2       0
+
+Average response 2.75 and turnaround time is 5.5
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ROUND ROBIN@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+#TEST-CASE PRIORITY-PREAMPTIVE
+5
+2
+0
+4
+1
+3
+2
+1
+3
+2
+4
+5
+
+ENTER NUMBER OF PROCESS 5
+2
+0
+4
+1
+3
+2
+1
+3
+2
+4
+5
+
+
+ORDER OF EXECUTION IS 1->2->3->1->4->5->2->5->5->
+Pro     Arr     Bur     Ct      Tat     Rt      Wt
+1       0       4       7       7       0       3
+2       1       3       12      11      1       8
+3       2       1       5       3       2       2
+4       3       2       9       6       4       4
+5       4       5       15      11      5       6
+
+Average response 2.4 and turnaround time is 7.6Average waiting 4.6
+
+
+#TEST-CASE2 ROUND ROBIN
+5
+3
+0
+8
+5
+2
+1
+7
+6
+3
+8
+5
+
+ORDER OF EXECUTION IS 1->3->1->2->4->3->5->1->3->5->
+Pro     Arr     Bur     Ct      Tat     Rt      Wt
+1       0       8       22      22      0       14
+2       5       2       11      6       4       4
+3       1       7       23      22      2       15
+4       6       3       14      8       5       5
+5       8       5       25      17      9       12
+
+Average response 4 and turnaround time is 15Average waiting 10
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@SHORTEST REMAINING TIME FIRST@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+########################TEST-CASE1 SRTF
+
+ENTER NUMBER OF PROCESS 5
+ENTER ARRIVAL AND BURST TIMES OF PROCESS 
+0
+4
+1
+3
+2
+1
+3
+2
+4
+5
+
+
+
+
+
+Pro     Arr     Bur     Ct      Tat     Rt      Wt
+1       0       4       5       5       0       1
+2       1       3       10      9       6       6
+3       2       1       3       1       0       0
+4       3       2       7       4       2       2
+5       4       5       15      11      6       6
+
+Average response 2.8 and turnaround time is 6Average waiting 3
+
+#############TEST-CASE2 SRTF
+
+ENTER NUMBER OF PROCESS 5
+
+ENTER ARRIVAL AND BURST TIMES OF PROCESS 2
+1
+1
+5
+4
+1
+0
+6
+2
+3
+
+Pro     Arr     Bur     Ct      Tat     Rt      Wt
+1       2       1       3       1       0       0
+2       1       5       16      15      10      10
+3       4       1       5       1       0       0
+4       0       6       11      11      0       5
+5       2       3       7       5       1       2
+
+Average response 2.2 and turnaround time is 6.6Average waiting 3.4
+
+#####################TEST-CASE3 SRTF
+
+ENTER NUMBER OF PROCESS 4
+
+ENTER ARRIVAL AND BURST TIMES OF PROCESS 0
+7
+1
+5
+2
+2
+3
+5
+
+Pro     Arr     Bur     Ct      Tat     Rt      Wt
+1       0       7       19      19      0       12
+2       1       5       8       7       0       2
+3       2       2       4       2       0       0
+4       3       5       13      10      5       5
+
+Average response 1.25 and turnaround time is 9.5Average waiting 4.75
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PRIORITY PREAMPTIVE@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+TEST-CASE1
+5
+0
+4
+2
+1
+3
+2
+2
+1
+1
+3
+2
+3
+4
+5
+1
+
+
+Pro     Arr     Bur     PRI     Ct      Tat     Rt      Wt
+1       0       4       2       10      10      0       6
+2       1       3       2       13      12      9       9
+3       2       1       1       3       1       0       0
+4       3       2       3       15      12      10      10
+5       4       5       1       9       5       0       0
+
+Average response 3.8 and turnaround time is 8 Average waiting 5
+
+
+TEST-CASE2 PRIORITY PREAMPTIVE
+5
+
+0
+3
+3
+1
+4
+2
+2
+6
+4
+3
+4
+6
+5
+2
+10
+
+Pro     Arr     Bur     PRI     Ct      Tat     Rt      Wt
+1       0       3       3       7       7       0       4
+2       1       4       2       5       4       0       0
+3       2       6       4       13      11      5       5
+4       3       4       6       17      14      10      10
+5       5       2       10      19      14      12      12
+
+Average response 5.4 and turnaround time is 10 Average waiting 6.2
+
+TEST-CASE3 PRIORITY PREAMPTIVE
+
+ENTER NUMBER OF PROCESS 7
+
+ENTER ARRIVAL BURST AND PRIORITY 0
+8
+3
+1
+2
+4
+3
+4
+4
+4
+1
+5
+5
+6
+2
+6
+5
+6
+10
+1
+1
+
+Pro     Arr     Bur     PRI     Ct      Tat     Rt      Wt
+1       0       8       3       15      15      0       7
+2       1       2       4       17      16      14      14
+3       3       4       4       21      18      14      14
+4       4       1       5       22      18      17      17
+5       5       6       2       12      7       0       1
+6       6       5       6       27      21      16      16
+7       10      1       1       11      1       0       0
+
+Average response 8.71429 and turnaround time is 13.7143 Average waiting 9.85714
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PAGE_REPLACEMENT FCFS@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ Enter the string 12324132144321
+
+Enter number of frames 3
+
+NUMBER OF PAGES IN STRING IS 14
+NUMBER OF FAULTS IS 7
+NUMBER OF HITS IS 7
+HIT RATIO 0.5
+
+#TEST-CASE2 FIFO_PAGE
+Enter the string 321032432104
+
+ENTER NUMBER OF FRAMES 4
+
+LENGTH OF STRING IS 12
+NUMBER OF HITS IS 2
+NUMBER OF FAULT IS 10
+HIT RATIO 0.166667
+FAULT RATIO 0.833333
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@PAGE_REPLACEMENT LRU@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+TEST-CASE1
+
+ENTER STRING 12324135244321
+
+ENTER NUMBER OF FRAMES 4
+
+LENGTH OF STRING IS 14
+NUMBER OF HITS IS 6
+NUMBER OF FAULT IS 8
+HIT RATIO 0.428571
+FAULT RATIO 0.571429
+
+
+TEST-CASE 2
+
+ENTER STRING 7012030423032
+
+ENTER NUMBER OF FRAMES 4
+
+LENGTH OF STRING IS 13
+NUMBER OF HITS IS 7
+NUMBER OF FAULT IS 6
+HIT RATIO 0.538462
+FAULT RATIO 0.461538
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BANKERS ALGORITHM@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+5
+3
+10
+10
+10
+1
+1
+1
+0
+1
+1
+3
+4
+0
+2
+0
+0
+1
+1
+1
+2
+1
+1
+0
+1
+1
+3
+5
+0
+2
+1
+1
+2
+2
+2
